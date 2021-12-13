@@ -1,0 +1,678 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.divgrilla{
+    display: grid;
+    background-color: rgb(94, 147, 197);
+    height: 1500px;
+}
+
+@media only screen and (max-width:600px){
+    .divgrilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 10% 5% 75% 5%;
+        grid-template-areas:"nav"
+                            "titulo"
+                            "logo"
+                            "main"
+                            "footer";
+    }
+    #Comentarios{
+        width: 100px;
+        height: 45px;
+    }
+    .ImgAct{
+        width: 70px;
+        height: 70px;
+        border-style: double;
+        border-color: rgb(12, 216, 243);
+    }
+    .tit{
+        font-size: 24px;
+    }
+    .parr1{
+        font-size: 86%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    .parr2{
+        font-size: 86%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    li{
+        flex-direction: row;
+        justify-content: center;
+        display: inline;
+        font-size: small;
+    }
+    ul{
+        margin: 0;
+    }
+    .xcaret{
+        width: 160px;
+        height: 160px;
+        margin-top: 7%;
+    }
+    .imgTit{
+        width: 85px;
+        height: 65px;
+        transform: skew(15deg);
+    }
+    .imgxcar{
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    footer{
+        
+        margin-top: 10%;
+        padding-top: 15PX;
+    }
+    .historia{
+        font-size: 20px;
+    }
+    h2{
+        font-size: x-large;
+    }
+    .grilla2{
+        margin-top: 2%;
+    }
+    .video{
+        grid-area: video;
+        border-width: 5px;
+        height: 85%;
+        width: 85%;
+        align-items: stretch;
+    }
+    .parrafo1{
+        color: rgb(31, 9, 9);
+        font-size: 80%;
+        margin: 0;
+    }
+    .img1{
+        width: 100px;
+        height: 93px;
+       transform: rotate(10deg);
+    }
+    
+    .parrafo2{
+        color: rgb(31, 9, 9);
+        font-size: 80%;
+        margin: 0;
+    }
+    .img2{
+        
+        width: 90px;
+        height: 83px;
+        transform: rotate(-10deg);
+    }
+    
+    .parrafo3{
+        color: rgb(31, 9, 9);
+        font-size: 80%;
+    }
+    .img3{
+        
+        width: 90px;
+        height: 83px;
+        transform: rotate(10deg);
+        
+    }
+    
+    .parrafo4{
+        color: rgb(31, 9, 9);
+        font-size: 80%;
+        
+    }
+    .img4{
+        width: 90px;
+        height: 83px;
+        transform: rotate(-10deg);
+    }
+    .pLocali{
+        font-size: 9px;}
+    .h3t{
+        font-size: x-small;
+    }
+    .Mapa{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media only screen and (min-width:600px){
+    .divgrilla{
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 10% 5% 75% 5%;
+    grid-template-areas:"nav"
+                        "titulo"
+                        "logo"
+                        "main"
+                        "footer";
+    }
+    .Mapa{
+        height: 100px;
+        width: 100px;
+    }
+    .divgrilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 10% 5% 75% 5%;
+        grid-template-areas:"nav"
+                            "titulo"
+                            "logo"
+                            "main"
+                            "footer";
+        }
+        .pLocali{
+            font-size: 15px;}
+        .h3t{
+            font-size: large;
+        }
+    #Comentarios{
+        width: 100px;
+        height: 45px;
+    }
+    .ImgAct{
+        width: 90px;
+        height: 90px;
+        border-style: double;
+        border-color: rgb(12, 216, 243);
+    }
+    .tit{
+        font-size: 30px;
+    }
+    .parr1{
+        font-size: 95%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    .parr2{
+        font-size: 95%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    .historia{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 200%;
+    }
+    ul{
+        text-align: right;
+        margin-right: 3%;
+        margin-left: 0;
+    }
+    main{
+        margin-top: 5%;
+    }
+    .imgxcar{
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    footer{
+        
+        margin-top: 10%;
+        padding-top: 15PX;
+    }
+    .imgBan{
+        width: 70px;
+        height: 50px;   
+    }
+    .xcaret{
+        width: 200px;
+        height: 200px;
+        margin-top: 7%;
+    }
+    .imgTit{
+        width: 100px;
+        height: 100px;
+        transform: skew(15deg);
+    }
+    .grilla2{
+        margin-top: 2%;
+    }
+    .video{
+        grid-area: video;
+        border-width: 5px;
+        height: 88%;
+        width: 88%;
+        align-items: stretch;
+    }
+    .parrafo1{
+        color: rgb(31, 9, 9);
+        font-size: 100%;
+    }
+    .img1{
+        transform: rotate(7deg);
+        width: 200px;
+        height: 150px;
+       
+    }
+    
+    .parrafo2{
+        color: rgb(31, 9, 9);
+        font-size: 100%;
+    }
+    .img2{
+        transform: rotate(-7deg);
+        width: 200px;
+        height: 150px;
+        
+    }
+    
+    .parrafo3{
+        color: rgb(31, 9, 9);
+        font-size: 100%;
+    }
+    .img3{
+        transform: rotate(7deg);
+        width: 180px;
+        height: 150px;
+        
+    }
+    
+    .parrafo4{
+        color: rgb(31, 9, 9);
+        font-size: 100%;
+        
+    }
+    .img4{
+        transform: rotate(-7deg);
+        width: 200px;
+        height: 180px;
+    }
+
+}
+
+
+@media only screen and (min-width:992px){
+    .divgrilla{
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 10% 5% 75% 5%;
+    grid-template-areas:"nav"
+                        "titulo"
+                        "logo"
+                        "main"
+                        "footer";
+    }
+    .Mapa{
+        height: 150px;
+        width: 150px;
+    }
+    .pLocali{
+        font-size: 25px;}
+    .h3t{
+        font-size: xx-large;
+    }
+
+    .historia{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 300%;
+    }
+    ul{
+        text-align: right;
+        margin-right: 3%;
+        margin-left: 0;
+    }
+    li{
+        font-size: x-large;
+    }
+    main{
+        margin-top: 5%;
+    }
+    .imgxcar{
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    footer{
+        
+        margin-top: 10%;
+        padding-top: 15PX;
+    }
+    .imgTit{
+        width: 130px;
+        height: 130px;
+        transform: skew(15deg);
+    }
+    .xcaret{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10%;
+    }
+    .pmex{
+        font-size: 30px;
+    }
+    #Comentarios{
+        width: 100px;
+        height: 45px;
+    }
+    .ImgAct{
+        width: 150px;
+        height: 150px;
+        border-style: double;
+        border-color: rgb(12, 216, 243);
+    }
+    .tit{
+        font-size: 40px;
+    }
+    .parr1{
+        font-size: 130%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    .parr2{
+        font-size: 130%;
+        margin-right: 2%;
+        align-items: center;
+    }
+    .grilla2{
+        margin-top: 2%;
+    }
+    .video{
+        grid-area: video;
+        border-width: 8px;
+        height: 86%;
+        width: 85%;
+        align-items: stretch;
+    }
+    .parrafo1{
+        color: rgb(31, 9, 9);
+        font-size: 120%;
+    }
+    .img1{
+        
+        width: 200px;
+        height: 150px;
+       
+    }
+    
+    .parrafo2{
+        color: rgb(31, 9, 9);
+        font-size: 120%;
+    }
+    .img2{
+        
+        width: 200px;
+        height: 150px;
+        
+    }
+    
+    .parrafo3{
+        color: rgb(31, 9, 9);
+        font-size: 120%;
+    }
+    .img3{
+        
+        width: 180px;
+        height: 150px;
+        
+    }
+    
+    .parrafo4{
+        color: rgb(31, 9, 9);
+        font-size: 115%;  
+    }
+    .img4{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+ul{
+    list-style-type: none;
+    height: 100%;
+    
+}
+li{
+    display: flex;
+    display: inline;
+}
+nav{
+    background-color: black;
+    grid-area: nav;
+    height: 100%;
+    margin:0 ;
+    
+}
+header{
+    background-color: black;
+    grid-area: titulo;
+}
+.Titulo{
+    display: inline;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: rgb(88, 220, 238);
+}
+
+.Bandera{
+    height: 100%;
+    width: 100%;
+    color: rgb(35, 245, 245);
+    grid-area: logo;
+    background-image: linear-gradient(black,rgb(160, 217, 221));
+}
+.imgBan{
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+.pmex{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(30, 207, 193);
+    margin-top: -7%;
+    padding: 0;
+    margin-bottom: 0;
+}
+main{
+    grid-area: main;
+    background-image: url("img/Fondo.jpg");
+    background-size: cover;
+    height: 100%;
+    padding-top: 10%;
+}
+.Intro{
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    color: rgb(64, 22, 100);
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.imgxcar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.xcaret{
+    
+    margin-top: 7%;
+}
+
+footer{
+    grid-area: footer;
+    margin: 0;
+    background-image: url("img/foote.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+}
+.fot{
+    color: rgb(4, 4, 15);
+    font-style: inherit;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+
+.historia{
+    color: rgb(64, 22, 100);
+    font-style: inherit;
+    margin-left: 8%;
+    margin-right: 8%;
+    
+}
+.imgH{
+    width: 30%;
+    height: 30%;
+    border-style: double;
+    border-color: rgb(163, 23, 163);
+}
+
+.SeeCultura{
+    background-image: url("Img/fondoMade2.jpg");
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100%;
+    width: 100%;
+}
+.grilla2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:"parrafo1 imagen1"
+                        "parrafo2 imagen2"
+                        "parrafo3 imagen3"
+                        "parrafo4 imagen4"
+                        "parrafo4 video";
+    height: 100%;
+    margin-left: 5%;
+    
+}
+.parrafo1{
+    grid-area: parrafo1;
+    margin-top: 10px;
+}
+.img1{
+    grid-area: imagen1;
+    justify-self: center;
+    border-style: double;
+    border-color: rgb(51, 163, 23);
+}
+
+.parrafo2{
+    grid-area: parrafo2;
+    margin-top: 5px;
+    
+}
+.img2{
+    grid-area: imagen2;
+    justify-self: center;
+    border-style: double;
+    border-color: rgb(51, 163, 23);
+}
+
+.parrafo3{
+    grid-area: parrafo3;
+    margin-top: 5px;
+}
+.img3{
+    grid-area: imagen3; 
+    justify-self: center;
+    border-style: double;
+    border-color: rgb(51, 163, 23);
+}
+
+.parrafo4{
+    grid-area: parrafo4;
+    margin-top: 5px;
+}
+.img4{
+    grid-area: imagen4;
+    justify-self: center;
+    border-style: double;
+    border-color: rgb(51, 163, 23);
+}
+.video{
+    border-style: double;
+    border-color: green;
+}
+.grilla3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 7% 30% 28% 10% ;
+    grid-template-areas:"parr1"
+                        "tit"
+                        "parr2"
+                        "imgA"
+                        "form";
+    height: 100%;
+    margin-left: 5%;
+}
+.tit{
+    grid-area: tit;
+    color: rgb(102, 40, 5);
+    font-family: fantasy;
+    text-align: center;
+}
+.parr1{
+    grid-area: parr1;
+}
+.parr2{
+    grid-area: parr2;
+}
+.pAct{
+    color: rgb(1, 1, 12);
+    text-align: center;
+}
+.imgA{
+    grid-area: imgA;
+    align-items: center;
+}
+.form{
+    grid-area: form;
+    height: 80%;
+    display: inline;
+}
+.mainLo{
+    background-image: url("Img/FonLo.jpg");
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 32px;
+    height: 100%;
+    width: 100%;
+}
+.pLocali{
+    font-size: 25px;
+    color: rgb(0, 48, 45);
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    text-align: left;
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+.h3t{
+    color: rgb(34, 11, 34) ;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
