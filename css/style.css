@@ -1,23 +1,78 @@
 body{
     margin: 0;
+}
+.grilla_header{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 60% 25%;
+    grid-template-areas:"nav nav nav nav"
+                        "imgLogo titulo titulo titulo"
+                        "pagina pagina bandera imgbandera";
+    grid-area: header;
     height: 100%;
+    background-image: url("../Img/FonndCol1.jpg");
+    background-size: cover;
+    position: relative;
 }
 
 .divgrilla{
     display: grid;
     background-color: rgb(94, 147, 197);
-    height: 1500px;
+    height: 1200px;
 }
-
+@keyframes borroso{
+    0%{
+        filter: blur(5px);
+    }
+    50%{
+        filter: blur(3px);
+    }
+    100%{
+        
+    }
+}
 @media only screen and (max-width:600px){
+    .imgxcar{
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .fot{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .imgBan{
+        width: 55px;
+        height: 40px;
+        transform: skew(-8deg);
+    }
+    .imgTit{
+        width: 100px;
+        height: 85px;
+        animation-name: borroso;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
     .divgrilla{
         grid-template-columns: 100%;
-        grid-template-rows: 5% 10% 5% 75% 5%;
-        grid-template-areas:"nav"
-                            "titulo"
-                            "logo"
+        grid-template-rows: 15% 75% 10%;
+        grid-template-areas:"header"
                             "main"
                             "footer";
+    }
+    .pagina{
+        font-size: 30px;
+    }
+    .Intro{
+        font-size: 23px;
+    }
+    .xcaret1{
+        width: 350px;
+        height: 260px;
+    }
+    .xcaret{
+        width: 160px;
+        height: 150px;
+        margin-top: 7%;
     }
     #Comentarios{
         width: 100px;
@@ -50,21 +105,7 @@ body{
     }
     ul{
         margin: 0;
-    }
-    .xcaret{
-        width: 160px;
-        height: 160px;
-        margin-top: 7%;
-    }
-    .imgTit{
-        width: 85px;
-        height: 65px;
-        transform: skew(15deg);
-    }
-    .imgxcar{
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
+    }  
     footer{
         
         margin-top: 10%;
@@ -73,9 +114,7 @@ body{
     .historia{
         font-size: 20px;
     }
-    h2{
-        font-size: x-large;
-    }
+    
     .grilla2{
         margin-top: 2%;
     }
@@ -95,8 +134,7 @@ body{
         width: 100px;
         height: 93px;
        transform: rotate(10deg);
-    }
-    
+    } 
     .parrafo2{
         color: rgb(31, 9, 9);
         font-size: 80%;
@@ -108,7 +146,6 @@ body{
         height: 83px;
         transform: rotate(-10deg);
     }
-    
     .parrafo3{
         color: rgb(31, 9, 9);
         font-size: 80%;
@@ -120,7 +157,6 @@ body{
         transform: rotate(10deg);
         
     }
-    
     .parrafo4{
         color: rgb(31, 9, 9);
         font-size: 80%;
@@ -140,31 +176,69 @@ body{
         height: 70px;
         width: 70px;
     }
+    nav{
+        justify-self: center;
+    }
 }
 
 @media only screen and (min-width:600px){
+
     .divgrilla{
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 10% 5% 75% 5%;
-    grid-template-areas:"nav"
-                        "titulo"
-                        "logo"
-                        "main"
-                        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 76% 9%;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
     }
+    .imgxcar{
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+    
+    .imgBan{
+        width: 60px;
+        height: 40px;
+        transform: skew(-8deg);   
+    }
+    .xcaret{
+        width: 210px;
+        height: 150px;
+        margin-top: 0;
+    }
+    .xcaret1{
+        width: 400px;
+        height: 200px;
+    }
+    .imgTit{
+        width: 100px;
+        height: 90px;
+        animation-name: borroso;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+    .Intro{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .fot{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .pmex{
+        font-size: 25px;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .pagina{
+        font-size: 35px;
+    }
+
+    
     .Mapa{
         height: 100px;
         width: 100px;
     }
-    .divgrilla{
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 10% 5% 75% 5%;
-        grid-template-areas:"nav"
-                            "titulo"
-                            "logo"
-                            "main"
-                            "footer";
-        }
         .pLocali{
             font-size: 15px;}
         .h3t{
@@ -196,40 +270,19 @@ body{
     .historia{
         font-size: 20px;
     }
-    h2{
-        font-size: 200%;
-    }
+    
     ul{
         text-align: right;
         margin-right: 3%;
         margin-left: 0;
     }
-    main{
-        margin-top: 5%;
-    }
-    .imgxcar{
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
+    
     footer{
         
         margin-top: 10%;
         padding-top: 15PX;
     }
-    .imgBan{
-        width: 70px;
-        height: 50px;   
-    }
-    .xcaret{
-        width: 200px;
-        height: 200px;
-        margin-top: 7%;
-    }
-    .imgTit{
-        width: 100px;
-        height: 100px;
-        transform: skew(15deg);
-    }
+    
     .grilla2{
         margin-top: 2%;
     }
@@ -283,35 +336,74 @@ body{
         width: 200px;
         height: 180px;
     }
-
 }
 
 
 @media only screen and (min-width:992px){
     .divgrilla{
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 10% 5% 75% 5%;
-    grid-template-areas:"nav"
-                        "titulo"
-                        "logo"
-                        "main"
-                        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 76% 9%;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
     }
+    .imgTit{
+        width: 130px;
+        height: 120px;
+        animation-name: borroso;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+    .imgxcar{
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+    footer{
+        
+        margin-top: 10%;
+        padding-top: 15PX;
+    }
+    .titulo{
+        font-size: 65px;
+    }
+    .xcaret{
+        width: 250px;
+        height: 200px;
+    }
+    .pmex{
+        font-size: 35px;
+    }
+    .pagina{
+        font-size: 45px;
+    }
+    .imgBan{
+        width: 77px;
+        height: 45px;
+        transform: skew(-8deg);   
+    }
+    .Intro{
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .xcaret1{
+        width: 440px;
+        height: 230px;
+    }
+
+
     .Mapa{
         height: 150px;
         width: 150px;
     }
     .pLocali{
-        font-size: 25px;}
+        font-size: 25px;
+    }
     .h3t{
         font-size: xx-large;
     }
 
     .historia{
         font-size: 24px;
-    }
-    h2{
-        font-size: 300%;
     }
     ul{
         text-align: right;
@@ -321,31 +413,10 @@ body{
     li{
         font-size: x-large;
     }
-    main{
-        margin-top: 5%;
-    }
-    .imgxcar{
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
-    footer{
-        
-        margin-top: 10%;
-        padding-top: 15PX;
-    }
-    .imgTit{
-        width: 130px;
-        height: 130px;
-        transform: skew(15deg);
-    }
-    .xcaret{
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10%;
-    }
-    .pmex{
-        font-size: 30px;
-    }
+    
+    
+    
+    
     #Comentarios{
         width: 100px;
         height: 45px;
@@ -425,76 +496,70 @@ body{
 ul{
     list-style-type: none;
     height: 100%;
-    
+    padding: 0;
+    margin-top: 3px;
+    margin-bottom: 0;
 }
 li{
     display: flex;
     display: inline;
 }
 nav{
-    background-color: black;
     grid-area: nav;
     height: 100%;
     margin:0 ;
     
 }
-header{
-    background-color: black;
+
+.titulo{
     grid-area: titulo;
-}
-.Titulo{
     display: inline;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    justify-self:center;
+    align-self: center;
+}
+.imgTit{
+    grid-area: imgLogo;
+    display: inline;
+    justify-self: right;
+    align-self: center;
 }
 h1{
     margin: 0;
     padding: 0;
-    color: rgb(88, 220, 238);
+    color: rgb(251, 253, 253);
 }
-
-.Bandera{
-    height: 100%;
-    width: 100%;
-    color: rgb(35, 245, 245);
-    grid-area: logo;
-    background-image: linear-gradient(black,rgb(160, 217, 221));
+.pagina{
+    grid-area: pagina;
+    margin: 0;
+    color: rgb(17, 13, 12);
+    justify-self: end;
 }
-.imgBan{
-    width: 25px;
-    height: 25px;
-    float: right;
+.imgBan{   
+    grid-area: imgbandera;
+    justify-self: center;
+    border: rgb(59, 231, 68);
+    border-style:dashed;
+    border-width: 1px;
 }
 .pmex{
-    display: inline;
     margin: 0;
     padding: 0;
-    float: right;
-}
-h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: rgb(30, 207, 193);
-    margin-top: -7%;
-    padding: 0;
-    margin-bottom: 0;
+    grid-area: bandera;
+    color: rgb(7, 8, 8);
+    justify-self: end;
+    align-self: end;
 }
 main{
     grid-area: main;
-    background-image: url("img/Fondo.jpg");
+    background-image: url("../Img/FondoMa.jpg");
     background-size: cover;
     height: 100%;
-    padding-top: 10%;
+    padding-top: 0%;
 }
 .Intro{
     display: flex;
     flex-direction: column;
-    font-size: 23px;
-    color: rgb(64, 22, 100);
+    color: rgb(50, 10, 85);
     margin-top: 5%;
     margin-left: 6%;
     margin-right: 6%;
@@ -503,28 +568,41 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+.xcaret1{
+    display:block;
+    margin:auto;
+    border: rgb(59, 231, 68);
+    border-style:double;
+    border-width: 3px;
+    margin-top: 2%;
 }
 .xcaret{
-    
-    margin-top: 7%;
+    border: rgb(76, 59, 231);
+    border-style:double;
+    border-width: 3px;
+    margin-top: 2%;
 }
 
 footer{
     grid-area: footer;
     margin: 0;
-    background-image: url("img/foote.jpg");
+    background-image: url("../Img/foote.jpg");
+    background-size: cover;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    opacity: .8;
 }
 .fot{
-    color: rgb(4, 4, 15);
-    font-style: inherit;
-    font-size: 35px;
-    font-weight: 700;
-    text-align: center;
+    color: rgb(0, 0, 8);
+    font-style: inherit;    
     margin-top: 0;
+    padding: auto;
 }
 
 .historia{
