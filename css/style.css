@@ -174,7 +174,7 @@ body{
     }
     .Mapa{
         height: 70px;
-        width: 70px;
+        width: 100px;
     }
     nav{
         justify-self: center;
@@ -237,7 +237,7 @@ body{
     
     .Mapa{
         height: 100px;
-        width: 100px;
+        width: 150px;
     }
         .pLocali{
             font-size: 15px;}
@@ -393,7 +393,7 @@ body{
 
     .Mapa{
         height: 150px;
-        width: 150px;
+        width: 500px;
     }
     .pLocali{
         font-size: 25px;
@@ -620,7 +620,7 @@ footer{
 }
 
 .SeeCultura{
-    background-image: url("Img/fondoMade2.jpg");
+    background-image: url("../Img/fondoMade2.jpg");
     background-size: cover;
     margin-top: 0;
     margin-bottom: 0;
@@ -728,7 +728,7 @@ footer{
     display: inline;
 }
 .mainLo{
-    background-image: url("Img/FonLo.jpg");
+    background-image: url("../Img/FonLo.jpg");
     background-size: cover;
     margin-top: 0;
     margin-bottom: 0;
